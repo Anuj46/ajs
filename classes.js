@@ -130,3 +130,4 @@ console.log(bankAccount1.withdraw(600));
 console.log(bankAccount1.withdraw(100));
 console.log(bankAccount1.deposit(-52));
 console.log(bankAccount1.deposit(12));
+console.log("first")

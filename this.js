@@ -323,3 +323,17 @@ const child = {
 };
 
 console.log("325", child.greet()); // Hi there !!!
+
+// The purpose of the prototype
+// JavaScript uses this object to find methods and properties on everything in JS!
+// If a property can not be found, JS works it’s way up the “prototype chain”, finding the prototype of every object
+// If the property can not be found, undefined is returned
+
+// __proto__ vs prototype
+// __proto__ is an internal property.
+
+console.log("335", Object.getPrototypeOf(child)); // { color: 'red', sing: [Function: sing] } // this is same as child.__proto__
+
+Object.setPrototypeOf(child, { baccha: true }); // set the Prototype
+
+console.log("339", Object.getPrototypeOf(child));
